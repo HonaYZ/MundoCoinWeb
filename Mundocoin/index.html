@@ -1,600 +1,142 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
 
-<title>MundoCoin — Is an upgrade project of blockchain cryptocurrency technology, the first coin developed based on PolyKerma core, fully integrated into web3.0 to achieve intelligent interaction between network and people, and people can refract virtual assets from web3.0 to reality</title>
-<meta name="title" content="MundoCoin,Revolutionary Innovation , Technology Upgrade , Modular Design !">
-<meta name="description" content="MundoCoin is an upgrade project of blockchain cryptocurrency technology, the first coin developed based on PolyKerma core, fully integrated into web3.0 to achieve intelligent interaction between network and people, and people can refract virtual assets from web3.0 to reality. ">
+	<head>
+		<meta charset="utf-8">
+        <title>MundoCoin — Connecting the world, sharing the future</title>
+        <meta name="description" content="Connecting the world, sharing the future.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Madeon08">
 
-<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+        <!-- ================= Favicon ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="img/favicon.png">
+        <!-- Retina iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-retina-ipad.png">
+        <!-- Retina iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-retina-iphone.png">
+        <!-- Standard iPad Touch Icon--> 
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-standard-ipad.png">
+        <!-- Standard iPhone Touch Icon--> 
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
 
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/aos.css">
-<link rel="stylesheet" href="assets/css/all.min.css">
-<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!-- ============== Resources style ============== -->
+        <link rel="stylesheet" href="css/style.css" />
 
-<link rel="stylesheet" href="assets/css/style.css">
+		<!-- Modernizr runs quickly on page load to detect features -->
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	
+	<body>
 
+		<!-- Page preloader -->
+		<div id="loading">
+			<div id="preloader">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
 
-<div class="preloader">
-<div class="preloader__inner">
-<div class="preloader__icon">
-<span></span>
-<span></span>
-</div>
-</div>
-</div>
+		<!-- Overlay -->
+		<div class="global-overlay">
 
+			<canvas id="constellationel"></canvas>
 
-<header class="header-section">
-<div class="container">
-<div class="header-holder">
-<div class="header-primary d-flex flex-wrap justify-content-between align-items-center">
-<div class="brand-logo d-none d-lg-inline-block">
-<div class="logo">
-<a href="index.html">
-<img src="assets/images/logo/logo.png" alt="logo">
-</a>
-</div>
-</div>
-<div class="header-wrapper justify-content-lg-end">
-<div class="mobile-logo d-lg-none">
-<a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
-</div>
-<div class="menu-area">
-<ul class="menu">
-<li>
-<a href="#home">Home</a>
-</li>
-<li>
-<a href="#about">About</a>
-</li>
-<li>
-<a href="#roadmap">Roadmap</a>
-</li>
-<li>
-<a href="#exchange">Exchange</a>
-</li>
-<li>
-<a href="#faq">Faq</a>
-</li>
-<li>
-<a href="#download">Download</a>
-</li>
-<li>
-<a href="https://explorer.mundocoin.lol">Explorer</a>
-</li>
-<div class="header-bar d-lg-none">
+			<div class="overlay">
 
-</header>
-<section class="banner banner--style2" id="home" style="background-image: url(assets/images/banner/bg.png);">
-<div class="container">
-<div class="banner__wrapper">
-<div class="row g-5 justify-content-center">
-<div class="col-lg-10">
-<div class="banner__content text-center" data-aos="zoom-in" data-aos-duration="900">
-<h1>MundoCoin<br> Welcome to our family </h1>
-<p>Revolutionary Innovation , Technology Upgrade , Modular Design !</p>
-<a href="https://mundocoin.lol" class="default-btn"><span>White Paper</span></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+				<!-- Lines Overlay -->
+				<div class="overlay-dash"></div>
+
+			</div>
+		</div>
+
+		<!-- START - Home Part -->
+		<section id="home-wrap">
+
+			<!-- Stars Overlay - Uncomment the next 3 lines to activate the effect-->
+			<!-- <div id='stars'></div>
+			<div id='stars2'></div>
+			<div id='stars3'></div> -->
+
+			<div class="content">
+
+				<!-- Your logo -->
+				<img src="img/logo.png" alt="" class="brand-logo text-intro opacity-0" />
+
+				<h1 class="text-intro opacity-0"><span >MUNDOCOIN</span></h1>
+
+				<p class="text-intro opacity-0">Connecting the world, sharing the future<br>
+					Continuous innovation, safety and reliability</p>
+
+				<a href="home.html"  class="action-btn trigger text-intro opacity-0">English</a><a href="home_CN.html"  class="action-btn trigger text-intro opacity-0">中&nbsp; 文</a>
 
 
-<div class="counter__section counter__section--uplift">
-<div class="container">
-<div class="counter__wrapper" data-aos="fade-up" data-aos-duration="1000">
-<div class="row g-5 justify-content-center align-items-center">
-<div class="col-lg-3 col-sm-6">
-<div class="counter__item">
-<h3><span data-purecounter-start="0" data-purecounter-end="21" class="purecounter"></span>Million
-</h3>
- <p>Max Supply</p>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="counter__item">
-<h3><span data-purecounter-start="0" data-purecounter-end="0" class="purecounter"></span>M
-</h3>
-<p>Circulating Supply </p>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="counter__item">
-<h3><span data-purecounter-start="0" data-purecounter-end="120" class="purecounter"></span>+
-</h3>
-<p>Master Node</p>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="counter__item">
-<h3><span data-purecounter-start="0" data-purecounter-end="0" class="purecounter"></span>+
-</h3>
- <p>Mini Node</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+			</div> <!-- /. content -->
+
+			<!-- Social icons -->
+			<div class="social-icons text-intro opacity-0">
+
+				<a href="https://discord.gg/evDtmSb373" ><img src="assets/images/discord.png"/></a>
+                <a href="https://t.me/hellomundocoin" ><img src="assets/images/telegram.png"/></a>
+                <a href="https://twitter.com/MundoCoin_top" ><img src="assets/images/twitter.png"/></a>
+                <a href="https://github.com/gcarreno/PolyKerma" ><img src="assets/images/github.png"/></a>
+                <a href="#" ><img src="assets/images/btc.png"/></a>
+
+			</div> <!-- /. social-icons -->
+
+		</section>
+		<!-- END - Home Part -->
 
 
 
+	<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+    <!-- ********** Resources jQuery ********** -->
+    <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+	
+	<!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easings.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
-<section class="benifit padding-top" id="about" >
-<div class="container">
-<div class="section-header section-header--middle">
-<div class="section-header__content">
-<div class="section-header__titlebar">
-<h2 class="section__header__title">About</h2>
-<h5>What is MundoCoin?</h5><br>
-<h6>MundoCoin is an upgrade project of blockchain cryptocurrency technology, the first coin developed based on PolyKerma core, fully integrated into web3.0 to achieve intelligent interaction between network and people, and people can refract virtual assets from web3.0 to reality.</h6><br>
-</div>
-</div>
-</div>
-<div class="benifit__wrapper">
-<div class="row g-5">
-<div class="col-lg-3 col-sm-6">
-<div class="benifit__item">
-<div class="benifit__item-inner">
-<div class="benifit__item-thumb">
-<img src="assets/images/benifit/01.png" alt="Benifit image">
-</div>
-<div class="benifit__item-content">
-<h4>Fast Trading</h4>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="benifit__item">
-<div class="benifit__item-inner">
-<div class="benifit__item-thumb">
-<img src="assets/images/benifit/02.png" alt="Benifit image">
-</div>
-<div class="benifit__item-content">
-<h4>Modular Design</h4>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="benifit__item">
-<div class="benifit__item-inner">
-<div class="benifit__item-thumb">
-<img src="assets/images/benifit/03.png" alt="Benifit image">
-</div>
-<div class="benifit__item-content">
-<h4>Multiple Applications</h4>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="benifit__item">
-<div class="benifit__item-inner">
-<div class="benifit__item-thumb">
-<img src="assets/images/benifit/04.png" alt="Benifit image">
-</div>
-<div class="benifit__item-content">
-<h4>Safe Network</h4>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+	<!-- Accelerated JavaScript animation JS file -->
+	<script src="js/velocity.min.js"></script> 
 
+	<!-- Accelerated JavaScript animation UI JS file -->
+	<script src="js/velocity.ui.min.js"></script> 
 
-<section class="token padding-top padding-bottom">
-<div class="container">
-<div class="section-header section-header--left">
-<div class="section-header__content">
-<div class="section-header__titlebar">
-<p class="section-header__subtitle"> Statistics</p>
-<h2 class="section__header__title">Coin Program</h2>
-</div>
-</div>
-</div>
-<div class="token__wrapper">
-<div class="row g-5">
-<div class="col-lg-6">
-<div class="token__info">
-<ul class="token__info-list">
-<li class="token__info-list-item">
-<p class="token__info-list-name">Max Supply</p>
-<p class="token__info-list-value">21,000,000</p>
-</li>
-<li class="token__info-list-item">
-<p class="token__info-list-name">MNO</p>
-<p class="token__info-list-value">0</p>
-</li>
-<li class="token__info-list-item">
-<p class="token__info-list-name">MCN</p>
-<p class="token__info-list-value">120</p>
-</li>
-<li class="token__info-list-item">
-<p class="token__info-list-name">MCG</p>
-<p class="token__info-list-value">0</p>
-</li>
-<li class="token__info-list-item">
-<p class="token__info-list-name">Project Funding</p>
-<p class="token__info-list-value">4%</p>
-</li>
-<li class="token__info-list-item">
-<p class="token__info-list-name">Dveloper Rewards</p>
-<p class="token__info-list-value">1%</p>
-</li>
-<li class="token__info-list-item">
-<p class="token__info-list-name">Masternode Rewards</p>
-<p class="token__info-list-value">25%</p>
-</li>
-<li class="token__info-list-item">
-<p class="token__info-list-name">Mininode Rewards</p>
-<p class="token__info-list-value">70%</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="col-lg-6">
-<div class="token__allocation-inner text-center">
-<div class="token__allocation-thumb">
-<img src="assets/images/token/1.png" alt="Tokenomics Image">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+	<!-- Newsletter plugin -->
+	<script src="js/notifyMe.js"></script>
 
+	<!-- Contact form plugin -->
+	<script src="js/contact-me.js"></script>
 
+	<!-- Slideshow/Image plugin -->
+	<script src="js/vegas.js"></script>
 
+	<!-- Scroll plugin -->
+	<script src="js/jquery.mousewheel.js"></script>
 
-<section class="roadmap padding-top  padding-bottom" id="roadmap">
-<div class="container">
-<div class="section-header section-header--middle">
-<div class="section-header__content">
-<div class="section-header__titlebar">
-<h2 class="section__header__title">Roadmap</h2>
-</div>
-</div>
-</div>
-<div class="col-md-6 offset-md-6">
-<div class=" roadmap__item2 ms-md-4 aos-init" data-aos="fade-left" data-aos-duration="800">
-<div class="roadmap__item2-inner">
-<div class="roadmap__item2-content">
-<div class="roadmap__item2-header">
-<h4>Project Established</h4>
-<p>01</p>
-</div>
-<p>Complete the underlying architecture of MundoCoin and test the project through the testnet!</p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6">
-<div class=" roadmap__item2 ms-auto me-md-4 aos-init" data-aos="fade-right" data-aos-duration="800">
-<div class="roadmap__item2-inner">
-<div class="roadmap__item2-content">
-<div class="roadmap__item2-header">
-<h4>Mainnet Update Launched</h4>
-<p>02</p>
-</div>
-<p>Mainnet launch, distribution of MCN, release of wallet updates!</p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 offset-md-6">
-<div class="roadmap__item2 ms-md-4  aos-init" data-aos="fade-left" data-aos-duration="800">
-<div class="roadmap__item2-inner">
-<div class="roadmap__item2-content">
-<div class="roadmap__item2-header">
-<h4>MNO Listed On The Exchang</h4>
-<p>03</p>
- </div>
-<p>MNO is listed on the exchange, and the mobile phone Mini node is launched at the same time!</p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="roadmap__item2 ms-auto me-md-4  aos-init" data-aos="fade-right" data-aos-duration="800">
-<div class="roadmap__item2-inner">
-<div class="roadmap__item2-content">
-<div class="roadmap__item2-header">
-<h4>Launch New Application</h4>
-<p>04</p>
-</div>
-<p>Implement node pledge MNO, mobile wallet integrates social functions, interactive games, bounty tasks and other functions!</p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 offset-md-6">
-<div class="roadmap__item2 ms-md-4  aos-init" data-aos="fade-left" data-aos-duration="800">
-<div class="roadmap__item2-inner">
-<div class="roadmap__item2-content">
-<div class="roadmap__item2-header">
-<h4>Optimizing Web3.0 Projects</h4>
-<p>05</p>
-</div>
-<p>Further upgrade and optimize the Web3.0 project, access more applications, and launch games!</p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="roadmap__item2 ms-auto me-md-4  aos-init" data-aos="fade-right" data-aos-duration="800">
-<div class="roadmap__item2-inner">
-<div class="roadmap__item2-content">
-<div class="roadmap__item2-header">
-<h4>Open multi-chain service</h4>
-<p>06</p>
-</div>
-<p>Optimize the PolyKerma core, start multiple blockchains at the same time, and open the multi-chain interoperability function!</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+	<!-- Custom Scrollbar plugin -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
 
+	<!-- Popup Newsletter Form -->
+	<script src="js/classie.js"></script>
+	<script src="js/dialogFx.js"></script>
 
-<section class="exchange padding-bottom shape-1r" id="exchange">
-<div class="container">
-<div class="section-header section-header--middle">
-<div class="section-header__content">
-<div class="section-header__titlebar">
-<h2 class="section__header__title">Exchange</h2>
-</div>
-</div>
-</div>
-<div class="exchange__wrapper">
-<div class="row justify-content-center g-4">
-<div class="col-lg-3 col-sm-6">
-<div class="exchange__item" data-aos="fade-up" data-aos-duration="800">
-<div class="exchange__thumb">
-<img src="assets/images/exchange/1.png" alt="Team Member Image">
-</div>
-<div class="exchange__content">
-<h4><a href="exchange-member.html">Soon</a></h4>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="exchange__item" data-aos="fade-up" data-aos-duration="800">
-<div class="exchange__thumb">
-<img src="assets/images/exchange/1.png" alt="Team Member Image">
-</div>
-<div class="exchange__content">
-<h4><a href="exchange-member.html">Soon</a></h4>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="exchange__item" data-aos="fade-up" data-aos-duration="800">
-<div class="exchange__thumb">
-<img src="assets/images/exchange/1.png" alt="Team Member Image">
-</div>
-<div class="exchange__content">
-<h4><a href="exchange-member.html">Soon</a></h4>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="exchange__item" data-aos="fade-up" data-aos-duration="800">
-<div class="exchange__thumb">
-<img src="assets/images/exchange/1.png" alt="Team Member Image">
-</div>
-<div class="exchange__content">
-<h4><a href="exchange-member.html">Soon</a></h4>
-</div>
-</div>
-</div>
-</section>
+	<!-- PhotoSwipe Core JS file -->
+	<script src="js/photoswipe.js"></script> 
 
+	<!-- PhotoSwipe UI JS file -->
+	<script src="js/photoswipe-ui-default.js"></script>
 
-<section class="faq padding-bottom shape-1r" id="faq">
-<div class="container">
-<div class="section-header section-header--middle">
-<div class="section-header__content">
-<div class="section-header__titlebar">
-<h2 class="section__header__title">Faq</h2>
-</div>
-</div>
-</div>
-<div class="faq__wrapper" data-aos="fade-up" data-aos-duration="1000">
-<ul class="faq__tab nav nav-pills mb-5" id="pills-tab" role="tablist">
-<li class="nav-item" role="presentation">
-<button class="nav-link active" id="pills-general-tab" data-bs-toggle="pill" data-bs-target="#pills-general" type="button" role="tab" aria-controls="pills-general" aria-selected="true">General Questions</button>
-</li>
+	<!-- Constellation effect -->
+	<script src="js/constellation.js"></script> 
 
-</ul>
-<div class="tab-content faq__content" id="pills-tabContent">
-<div class="tab-pane fade show active" id="pills-general" role="tabpanel" aria-labelledby="pills-general-tab">
-<div class="row gy-3 gx-5">
-<div class="col-lg-6">
-<div class="accordion accordion-flush" id="accordionGeneral1">
-<div class="accordion-item">
-<h6 class="accordion-header" id="general1-headingOne">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general1-collapseOne" aria-expanded="false" aria-controls="general1-collapseOne">
-What is MundoCoin/MNO?
-</button>
-</h6>
-<div id="general1-collapseOne" class="accordion-collapse collapse" aria-labelledby="general1-headingOne" data-bs-parent="#accordionGeneral1">
-<div class="accordion-body">MundoCoin/MNO is a new L1 Coin that integrates WEB3.0 attributes such as transactions, social networking, and games.
-</div>
-</div>
-</div>
-<div class="accordion-item">
-<h6 class="accordion-header" id="general-headingTwo">
-<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#general-collapseTwo" aria-expanded="false" aria-controls="general-collapseTwo">
-What is MundoCoinNode/MCN?
-</button>
-</h6>
-<div id="general-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="general-headingTwo" data-bs-parent="#accordionGeneral1">
-<div class="accordion-body">MundoCoinNode/MCN is a credential, and only with MCN can you run the master node.
-</div>
-</div>
-</div>
-<div class="accordion-item">
-<h6 class="accordion-header" id="general-headingThree">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general-collapseThree" aria-expanded="false" aria-controls="general-collapseThree">
-What is MundoCoin’s supply?
-</button>
-</h6>
-<div id="general-collapseThree" class="accordion-collapse collapse" aria-labelledby="general-headingThree" data-bs-parent="#accordionGeneral1">
-<div class="accordion-body">Total supply is 21,000,000. Current supply can be found on MNO blockchain explorer.
-</div>
-</div>
- </div>
-</div>
-</div>
-<div class="col-lg-6">
-<div class="accordion accordion-flush" id="accordionGeneral2">
-<div class="accordion-item">
-<h6 class="accordion-header" id="general2-headingOne">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general2-collapseOne" aria-expanded="false" aria-controls="general2-collapseOne">
-Is MundoCoin listed at any Exchange?
-</button>
-</h6>
-<div id="general2-collapseOne" class="accordion-collapse collapse" aria-labelledby="general2-headingOne" data-bs-parent="#accordionGeneral2">
-<div class="accordion-body">MNO is not yet listed on exchanges, but it will be soon.
-</div>
-</div>
-</div>
-<div class="accordion-item">
-<h6 class="accordion-header" id="general2-headingTwo">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general2-collapseTwo" aria-expanded="false" aria-controls="general2-collapseTwo">
-What Wallet can I use to hold MundoCoin?
-</button>
-</h6>
-<div id="general2-collapseTwo" class="accordion-collapse collapse" aria-labelledby="general2-headingTwo" data-bs-parent="#accordionGeneral2">
-<div class="accordion-body">Can use PC wallet, mobile wallet to store and send MNO.
-</div>
-</div>
-</div>
-<div class="accordion-item">
-<h6 class="accordion-header" id="general2-headingThree">
-<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#general2-collapseThree" aria-expanded="false" aria-controls="general2-collapseThree">
-How to get MundoCoin?
-</button>
-</h6>
- <div id="general2-collapseThree" class="accordion-collapse collapse show" aria-labelledby="general2-headingThree" data-bs-parent="#accordionGeneral2">
-<div class="accordion-body">You can choose to run the master node of the MNO through the server, or run the mini node through the mobile phone to obtain the MNO.
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+	<!-- Main JS File -->
+	<script src="js/main.js"></script>
+	
+	<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 
+	</body>
 
-<section class="work padding-top padding-bottom " id="download" >
-<div class="container">
-<div class="section-header section-header--middle">
-<div class="section-header__content">
-<div class="section-header__titlebar">
-<h2 class="section__header__title">Download</h2>
-</div>
-</div>
-</div>
-<div class="work__wrapper">
-<div class="row  justify-content-center g-4">
-<div class="col-lg-4 col-sm-6">
-<div class="work__item">
-<div class="work__item-inner">
-<div class="work__item-thumb">
-<img src="assets/images/work/1.png" alt="work Step 1 Image">
-</div>
-<div class="work__item-content">
-<a href="https://mundocoin.lol" class="default-btn"><span>MasterNode</span></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-sm-6">
-<div class="work__item">
-<div class="work__item-inner">
-<div class="work__item-thumb">
-<img src="assets/images/work/2.png" alt="work Step 2 Image">
-</div>
-<div class="work__item-content">
-<a href="https://mundocoin.lol" class="default-btn"><span>Wallet</span></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-sm-6">
-<div class="work__item">
-<div class="work__item-inner">
-<div class="work__item-thumb">
-<img src="assets/images/work/3.png" alt="work Step 3 Image">
-</div>
-<div class="work__item-content">
-<a href="https://mundocoin.lol" class="default-btn"><span>MiniNode</span></a>
-</div>
-</div>
-</div>
-</div>
-<div class="text-center mt-5">
-<a href="https://mundocoin.lol" class="default-btn"><span>More</span></a>
-</div>
-</div>
-</div>
-</section>
-
-
-
-
-<footer class="footer" >
-<div class="footer__wrapper padding-top padding-bottom">
-<div class="container">
-<div class="footer__content text-center">
-<a class="mb-4 d-inline-block"><img src="assets/images/logo/logo1.png" alt="Logo"></a>
-<ul class="social justify-content-center">
-<li class="social__item">
-<a href="#" ><img src="assets/images/discord.png"/></a>
-<a href="#" ><img src="assets/images/github.png"/></a>
-<a href="#" ><img src="assets/images/telegram.png"/></a>
-<a href="#" ><img src="assets/images/btc.png"/></a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="footer__copyright">
-<div class="container">
-<div class="text-center py-4">
-<p class=" mb-0">Copyright© 2023 | <a href="https://mundocoin.lol">MundoCoin</a> </p>
-</div>
-</div>
-</div>
-</footer>
-
-
-<a href="#" class="scrollToTop"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
-
-
-<script src=" assets/js/jquery-3.6.0.min.js">
-    </script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/all.min.js"></script>
-<script src="assets/js/swiper-bundle.min.js"></script>
-<script src="assets/js/aos.js"></script>
-<script src="assets/js/purecounter.js"></script>
-
-<script src="assets/js/custom.js"></script>
-</body>
 </html>
